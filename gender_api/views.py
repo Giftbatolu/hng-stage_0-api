@@ -4,6 +4,13 @@ from rest_framework.response import Response
 from rest_framework import status
 from datetime import datetime, timezone
 
+class HomeView(APIView):
+    def get(self, request):
+        return Response({
+            "message": "HNG Stage 0 API is live",
+            "endpoint": "/api/classify?name=your_name"
+        })
+
 class ClassifyNameView(APIView):
     def get(self, request):
         name = request.query_params.get('name')

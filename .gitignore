@@ -5,3 +5,6 @@ stage_venv/
 __pycache__/
 *.pyc
 *.pyo
+
+# Django database
+db.sqlite3

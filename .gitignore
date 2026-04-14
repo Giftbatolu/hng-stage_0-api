@@ -1,0 +1,7 @@
+#  Virtual Environment
+stage_venv/
+
+#  Python Bytecode
+__pycache__/
+*.pyc
+*.pyo
